@@ -1,5 +1,5 @@
 class admin_users (
-  $userlist = [ 'temp' ]
+  $userlist = [ "temp" ]
 ){
 
   case $::osfamily {
