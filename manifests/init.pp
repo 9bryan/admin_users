@@ -6,7 +6,6 @@ class admin_users (
     'RedHat': {
       user { $userlist:
         ensure     => present,
-        password   => '$1$v4K9E8Wj$gZIHJ5JtQL5ZGZXeqSSsd0',
         groups     => ['wheel'],
         managehome => true,
       }
@@ -15,7 +14,6 @@ class admin_users (
     'windows': {
       user { $userlist:
         ensure   => present,
-        password => 'puppet',
         groups   => ['Administrators'],
       }
     }
