@@ -7,7 +7,7 @@ class admin_users (
       user { $userlist:
         ensure     => present,
         password   => '$1$v4K9E8Wj$gZIHJ5JtQL5ZGZXeqSSsd0',
-        groups     => ['root'],
+        groups     => ['wheel'],
         managehome => true,
       }
     }
